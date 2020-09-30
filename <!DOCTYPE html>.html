@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <script>
+        function amir(){
+            document.getElementById('change').innerHTML='be change';
+        }
+    </script>
 </head>
 <body>
-    <h2>what can javaScript to do?</h2>
+   <h2>what can javaScript to do?</h2>
     <p id="demo">javaScript can change </p>
     <button onclick="document.getElementById('demo').innerHTML='hello Amir'">change</button>
     <br> <hr>
@@ -33,9 +38,26 @@
      <td>patrik</td>
      <td>olsson</td>
   </tr>
-</table>
+</table> <br>
 <button onclick="document.getElementById('show').style.display='block'">show table</button>
+<br> <hr> <br>
+<p id="change">first java script function</p>
+<button onclick="amir()">click</button>
+<br> <hr> <br>
+<p id="amir">first external javascript function</p>
+<button onclick="external()">click</button>
+<br><hr><br>
 
+<h2>first path</h2>
+<p id="add"></p>
+<script>
+    document.getElementById('add').innerHTML=34+22;
+</script>
+<br><hr><br>
+<script>
+    document.write(2+2);
+</script>
 
+<script src="script.js"></script>
 </body>
 </html>
